@@ -54,13 +54,16 @@ body {
     gap: 15px;
 }
 
-.main-item {
+.main-content {
     flex: 2;
 }
 
-.main-itmem2 {
+.main-sidecontent {
     flex: 1;
-    background-color: gold;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    height: max-content;
 }
 
 /* user */
@@ -69,6 +72,8 @@ body {
     display: flex;
     gap: 30px;
     padding: 25px;
+    border-radius: 8px;
+
 }
 
 .user__contacts {
@@ -125,6 +130,7 @@ body {
     padding: 15px 0;
     padding: 30px;
     margin: 15px 0;
+    border-radius: 8px;
 }
 
 .gallery__heading {
@@ -218,6 +224,7 @@ body {
 .review {
     background-color: #fff;
     padding: 25px;
+    border-radius: 8px;
 }
 
 .review__heading {
@@ -304,6 +311,127 @@ textarea {
     color: #BAB8C0;
     padding: 12px 45px;
     border-radius: 5px;
+}
+
+/* guide */
+.guide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.guide__img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.guide__text {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* services */
+.service__heading {
+    color: #352C49;
+    font-size: 16px;
+    margin: 20px 0 30px 0;
+}
+
+.service__item {
+    display: flex;
+    /* padding: 10px 10px 10px 15px; */
+    border: 1px solid #E8E8E9;
+    margin: 15px 0;
+    border-radius: 15px;
+}
+
+.service__item--active {
+    border: 1px solid #00AEDC;
+}
+
+.service__condition {
+    background-color: #F9F9FA;
+}
+
+.service__time {
+    width: 38px;
+    height: 38px;
+    color: #fff;
+    background-color: #F5B118;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.service__condition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 15px 0 0 15px;
+    border-right: 1px solid #E8E8E9;
+}
+
+.time {
+    font-size: 10px;
+    font-weight: 100;
+}
+
+.service__price {
+    font-size: 12px;
+    color: #352C49;
+    font-weight: bold;
+}
+
+.service__oferings {
+    padding: 10px;
+}
+
+.service__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service__title h4 {
+    font-size: 14px;
+    color: #352C49;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.service__text {
+    color: #7A7A7A;
+    font-size: 14px;
+}
+
+.service__readmore {
+    font-size: 13px;
+    color: #352C49;
+}
+
+.service__booking {
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    background-color: #00AEDC;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* media */

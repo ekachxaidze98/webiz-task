@@ -482,7 +482,7 @@ textarea {
     height: 18px;
 }
 
-input {
+/* input {
     width: 18px;
     height: 18px;
     background-color: white;
@@ -497,7 +497,57 @@ input {
 
 input:checked {
     border: 2px solid #00AEDC;
-}
+} */
+
+.service__checkbox-container {
+    position: relative;
+    padding-left: 18px;
+    cursor: pointer;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .service__checkbox-container input {
+    position: absolute;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .service__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    border: 2px solid #00AEDC;
+    border-radius: 50%;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .service__checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .service__checkbox-container input:checked ~ .service__checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .service__checkbox-container .service__checkmark:after {
+    left: 5px;
+    top: -5px;
+    width: 5px;
+    height: 11px;
+    border: solid #00AEDC;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
 
 .service__text {
     color: #7A7A7A;

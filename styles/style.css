@@ -269,9 +269,11 @@ body {
     padding: 20px 0;
     gap: 30px;
 }
-.review__info:nth-child(2){
+
+.review__info:nth-child(2) {
     border-bottom: 1px solid #DBDCDE;
 }
+
 .review__rate {
     display: flex;
     justify-content: space-between;
@@ -372,6 +374,7 @@ textarea {
     gap: 15px;
     margin-bottom: 25px;
 }
+
 .guide__img {
     width: 50px;
     height: 50px;
@@ -382,6 +385,7 @@ textarea {
     font-weight: bold;
     font-size: 16px;
 }
+
 /* services */
 .service__heading {
     color: #352C49;
@@ -514,6 +518,7 @@ input:checked {
     justify-content: center;
     align-items: center;
 }
+
 /* service-block */
 .service--visible {
     display: none;
@@ -542,6 +547,7 @@ input:checked {
 .service__showarrow i {
     color: #9B9EA3;
 }
+
 /* media */
 @media only screen and (max-width: 1200px) {
     .container {
@@ -554,11 +560,13 @@ input:checked {
         margin: 0 15px;
     }
 }
+
 @media only screen and (max-width: 768px) {
-    .user{
+    .user {
         flex-direction: column;
     }
 }
+
 @media only screen and (max-width: 576px) {
     .main {
         padding: 15px 0 40px 0;

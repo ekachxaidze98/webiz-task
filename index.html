@@ -34,6 +34,7 @@
                         <div class="user__profile">
                             <img class="user__img" src="./images/user.jpg" alt="">
                             <div class="user__contacts">
+                                <h1 class="user__name user__name--visible">Samanta Brown</h1>
                                 <div class="user__icons">
                                     <img src="./images/010-linkedin.png" alt="">
                                     <img src="./images/001-facebook.png" alt="">
@@ -44,7 +45,7 @@
                             </div>
                         </div>
                         <div class="user__about">
-                            <h1>Samanta Brown</h1>
+                            <h1 class="user__name">Samanta Brown</h1>
                             <p>I am professional coach of Go. I am 32 years old,Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Eos, accusamus qui alias minima voluptatum omnis corrupti molestiae
                                 enim itaque consequuntur?</p>
@@ -55,7 +56,56 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, obcaecati cumque! Dolorem
                                 reiciendis perferendis quod alias quidem deserunt labore, in veritatis fugit, neque
                                 voluptatem illum sit, odio quam!</p>
+                                <a class="user__hidetext" href="">Less</a>
                         </div>
+                    </div>
+                    <!-- services block-->
+                    <div class="service service--visible">
+                        <h2 class="service__heading">Services</h2>
+                        <div class="service__item service__item--active">
+                            <div class="service__condition">
+                                <span class="service__time service__time--color">45<span class="time">Min</span></span>
+                                <span class="service__price">Free</span>
+                            </div>
+                            <div class="service__oferings">
+                                <div class="service__title">
+                                    <h4>Portrait Photography fot beginers</h4>
+                                </div>
+                                <p class="service__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="service__item">
+                            <div class="service__condition">
+                                <span class="service__time service__time--color">45<span class="time">Min</span></span>
+                                <span class="service__price">Free</span>
+                            </div>
+                            <div class="service__oferings">
+                                <div class="service__title">
+                                    <h4>Portrait Photography</h4>
+                                </div>
+                                <p class="service__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Reiciendis quaerat doloremque amet.</p>
+                                    <div class="service__showarrow">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="service__item">
+                            <div class="service__condition">
+                                <span class="service__time service__time--color">45<span class="time">Min</span></span>
+                                <span class="service__price">$110</span>
+                            </div>
+                            <div class="service__oferings">
+                                <div class="service__title">
+                                    <h4>Portrait Photography fot middle and experts</h4>
+                                </div>
+                                <p class="service__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Debitis, expedita.Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                                <div class="service__showarrow">
+                                    <i class="fas fa-chevron-up"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="service__booking" href="">Book a Call</a>
                     </div>
                     <!-- gallery -->
                     <div class="gallery">
@@ -84,14 +134,17 @@
                         <div class="review__info">
                             <img class="review__img" src="./images/review2.jpg" alt="">
                             <div class="review__text">
-                                <div class="review__rate">
-                                    <h3 class="review__author">Sophia Salvatti</h3>
+                                <div class="review__head">
+                                    <img class="review__img review__img--visible" src="./images/review2.jpg" alt="">
+                                    <div class="review__rate">
+                                        <h3 class="review__author">Sophia Salvatti</h3>
                                     <div class="review__rating">
                                         <img src="./images/Path Copy 3.png" alt="">
                                         <img src="./images/Path Copy 3.png" alt="">
                                         <img src="./images/Path Copy 3.png" alt="">
                                         <img src="./images/Path Copy 3.png" alt="">
                                         <img src="./images/Path Copy 4.png" alt="">
+                                    </div>
                                     </div>
                                 </div>
                                 <p>its a longest Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic veniam
@@ -103,14 +156,17 @@
                         <div class="review__info">
                             <img class="review__img" src="./images/review1.jpg" alt="">
                             <div class="review__text">
-                                <div class="review__rate">
-                                    <h3 class="review__author">Maxim Stovicky</h3>
+                                <div class="review__head">
+                                    <img class="review__img review__img--visible" src="./images/review1.jpg" alt="">
+                                    <div class="review__rate">
+                                        <h3 class="review__author">Maxim Stovicky</h3>
                                     <div class="review__rating">
                                         <img src="./images/Path Copy 3.png" alt="">
                                         <img src="./images/Path Copy 3.png" alt="">
                                         <img src="./images/Path Copy 3.png" alt="">
                                         <img src="./images/Path Copy 3.png" alt="">
                                         <img src="./images/Path Copy 4.png" alt="">
+                                    </div>
                                     </div>
                                 </div>
                                 <p>its a longest Lorem ipsum, Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -145,14 +201,16 @@
                                 </div>
                             </div>
                             <textarea>Share Your Thoughts about this Service</textarea>
-                            <button class="review__button--disabled">Post</button>
+                            <div class="review__button-container">
+                                <button class="review__button--disabled">Post</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="main-sidecontent">
                     <!-- guide -->
                     <div class="guide">
-                        <img class="guide__img" src="./images/camera.png" alt="">
+                        <img class="guide__img" src="./images/Capture.PNG" alt="">
                         <span class="guide__text">How to Shoot a perfect beautiful portrait?</span>
                     </div>
                     <!-- services -->
@@ -166,7 +224,7 @@
                             <div class="service__oferings">
                                 <div class="service__title">
                                     <h4>Portrait Photography fot beginers</h4>
-                                    <input type="checkbox">
+                                    <img class="service__check" src="./images/check.PNG" alt="">
                                 </div>
                                 <p class="service__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                             </div>
@@ -205,6 +263,7 @@
             </div>
         </div>
     </section>
+    <script src="https://kit.fontawesome.com/0cba82bad3.js"></script>
 </body>
 
 </html>

@@ -49,6 +49,11 @@ body {
     color: #fff;
 }
 
+#header__icon {
+    display: none;
+    color: #7A7A7A;
+}
+
 /* main */
 .main {
     background-color: #F2F2F3;
@@ -494,10 +499,6 @@ input:checked {
     border: 2px solid #00AEDC;
 }
 
-input[type=checkbox]:checked .service__item {
-    border: 1px solid #00AEDC;
-}
-
 .service__text {
     color: #7A7A7A;
     font-size: 14px;
@@ -581,6 +582,10 @@ input[type=checkbox]:checked .service__item {
 
     .header__item {
         display: none;
+    }
+
+    #header__icon {
+        display: block;
     }
 
     .user {

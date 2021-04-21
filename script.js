@@ -1,9 +1,12 @@
-const serviceCards = document.querySelectorAll('.service__item');
-
+const checkbox = document.querySelectorAll('input[type=checkbox]');
 
 function active(event) {
-  serviceCards.forEach(item => item.classList.remove('service__item--active'))
-  event.currentTarget.classList.add('service__item--active');
+    const currentElement = event.target.parentElement.parentElement.parentElement.parentElement;
+    if (currentElement.classList.contains('service__item--active')) {
+        currentElement.classList.remove('service__item--active');
+    } else {
+        currentElement.classList.add('service__item--active');
+    }
 }
 
-serviceCards.forEach(item => item.addEventListener('click', active))
+checkbox.forEach(item => item.addEventListener('click', active));

@@ -494,6 +494,9 @@ input:checked {
     border: 2px solid #00AEDC;
 }
 
+input[type=checkbox]:checked .service__item {
+    border: 1px solid #00AEDC;
+}
 
 .service__text {
     color: #7A7A7A;
@@ -600,6 +603,7 @@ input:checked {
     }
 
     .user__contacts {
+        margin-left: 25px;
         align-items: flex-start;
     }
 

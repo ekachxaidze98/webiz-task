@@ -192,11 +192,12 @@ body {
 
 .gallery__image--big {
     width: 160px;
-    flex-grow: 2;
+    flex-grow: 3;
 }
 
 .gallery__image--medium {
     width: 108px;
+    flex-grow: 2;
 }
 
 .gallery__image--small {
@@ -713,5 +714,4 @@ textarea {
         width: 20px;
         height: 20px;
     }
-
 }

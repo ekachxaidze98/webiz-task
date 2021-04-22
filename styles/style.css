@@ -362,7 +362,9 @@ textarea {
     margin: 10px 0 25px 0;
     border-radius: 8px;
 }
-
+textarea::placeholder {
+    color: #D4D4D4;
+}
 .review__button-container {
     display: flex;
     justify-content: flex-end;

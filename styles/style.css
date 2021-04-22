@@ -351,7 +351,7 @@ body {
     cursor: pointer;
 }
 
-textarea {
+#reviewTextarea {
     outline: none;
     width: 100%;
     height: 120px;
@@ -363,7 +363,7 @@ textarea {
     border-radius: 8px;
 }
 
-textarea::placeholder {
+#reviewTextarea::placeholder {
     color: #D4D4D4;
 }
 
@@ -372,14 +372,17 @@ textarea::placeholder {
     justify-content: flex-end;
 }
 
-.review__button--disabled {
+#reviewButton {
     outline: none;
     border: none;
-    background-color: #F0F1F1;
     color: #BAB8C0;
     padding: 12px 45px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.active {
+    background-color: #00AEDC;
 }
 
 /* guide */
@@ -716,7 +719,7 @@ textarea::placeholder {
         margin-bottom: 10px;
     }
 
-    .review__button--disabled {
+    #reviewButton {
         font-size: 12px;
         padding: 8px 22px;
     }

@@ -1,3 +1,4 @@
+// service checkmarks
 const checkbox = document.querySelectorAll('input[type=checkbox]');
 
 function active(event) {
@@ -10,3 +11,19 @@ function active(event) {
 }
 
 checkbox.forEach(item => item.addEventListener('click', active));
+
+// textarea dissabled button
+
+const textInput = document.getElementById("reviewTextarea");
+const button = document.getElementById("reviewButton");
+
+function valid() {
+    if (textInput.value === "") {
+        button.disabled = true
+    } else {
+        button.disabled = false
+        button.classList.add("active")
+    }
+}
+
+textInput.addEventListener('input', valid);

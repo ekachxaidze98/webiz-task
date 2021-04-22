@@ -701,7 +701,6 @@ textarea {
         margin-bottom: 10px;
     }
 
-
     .review__button--disabled {
         font-size: 12px;
         padding: 8px 22px;
@@ -733,7 +732,5 @@ textarea {
         width: 20px;
         height: 20px;
     }
-
-
 
 }

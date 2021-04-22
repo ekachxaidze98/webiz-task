@@ -157,6 +157,11 @@ body {
     color: #352C49;
     text-align: end;
     font-weight: bold;
+    transition: color 0.3s ease-in;
+}
+
+.user__text--visible:hover {
+    color: #00AEDC;
 }
 
 /* gallery */
@@ -410,6 +415,18 @@ textarea {
     border: 1px solid #00AEDC;
 }
 
+.service__condition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 15px 0 0 15px;
+    border-right: 1px solid #E8E8E9;
+    background-color: #F9F9FA;
+}
+
 .service__time {
     width: 38px;
     height: 38px;
@@ -435,18 +452,6 @@ textarea {
 
 .service__item:nth-child(4) .service__condition .service__time {
     background-color: #B8B8FE;
-}
-
-.service__condition {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    padding: 15px;
-    border-radius: 15px 0 0 15px;
-    border-right: 1px solid #E8E8E9;
-    background-color: #F9F9FA;
 }
 
 .time {
@@ -476,11 +481,6 @@ textarea {
     font-weight: bold;
     margin-bottom: 15px;
     max-width: 90%;
-}
-
-.service__check {
-    width: 18px;
-    height: 18px;
 }
 
 .service__checkbox-container {
@@ -540,6 +540,11 @@ textarea {
 .service__readmore {
     font-size: 13px;
     color: #352C49;
+    transition: color 0.3s ease-in;
+}
+
+.service__readmore:hover {
+    color: #00AEDC;
 }
 
 .service__booking {
@@ -549,18 +554,25 @@ textarea {
     background-color: #00AEDC;
     color: #fff;
     font-size: 14px;
-    padding: 10px;
+    padding: 8px;
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid #00AEDC;
+    transition: all 0.3s ease-in;
+}
+
+.service__booking:hover {
+    background-color: #fff;
+    color: #352C49;
+    font-weight: bold;
 }
 
 /* service-block */
 .service--visible {
     display: none;
     background-color: #fff;
-    min-width: 320px;
     padding: 25px;
 }
 
@@ -569,7 +581,6 @@ textarea {
 }
 
 .service__item:nth-child(2) .service__condition .service__time--color {
-
     background-color: #5CD6BE;
 }
 
@@ -602,6 +613,7 @@ textarea {
     .user {
         flex-direction: column;
     }
+
     .review__rate {
         flex-direction: column;
     }
@@ -625,7 +637,6 @@ textarea {
     }
 
     .user {
-        flex-direction: column;
         margin-bottom: 30px;
     }
 
@@ -656,6 +667,9 @@ textarea {
         display: block;
     }
 
+    .user__icons {
+        margin: 5px 0;
+    }
 
     .main-sidecontent {
         order: 1;
@@ -687,13 +701,17 @@ textarea {
         margin-bottom: 10px;
     }
 
-    .service__booking {
-        display: none;
-    }
-        .review__button--disabled {
+
+    .review__button--disabled {
         font-size: 12px;
         padding: 8px 22px;
     }
+
+    .logo {
+        width: 15px;
+        height: 23px;
+    }
+
 }
 
 @media only screen and (max-width: 360px) {
@@ -709,10 +727,6 @@ textarea {
 
     .user__name {
         font-size: 15px;
-    }
-
-    .user__icons {
-        margin: 10px 0;
     }
 
     .user__icons img {

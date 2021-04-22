@@ -20,10 +20,13 @@ const button = document.getElementById("reviewButton");
 function valid() {
     if (textInput.value === "") {
         button.disabled = true
+        button.classList.remove("active")
     } else {
         button.disabled = false
         button.classList.add("active")
     }
+
+    console.log(textInput.value)
 }
 
 textInput.addEventListener('input', valid);

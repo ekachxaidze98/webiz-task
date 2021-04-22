@@ -26,7 +26,6 @@ function valid() {
         button.classList.add("active")
     }
 
-    console.log(textInput.value)
 }
 
 textInput.addEventListener('input', valid);

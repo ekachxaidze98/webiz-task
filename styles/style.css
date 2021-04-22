@@ -375,6 +375,7 @@ textarea {
     color: #BAB8C0;
     padding: 12px 45px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 /* guide */

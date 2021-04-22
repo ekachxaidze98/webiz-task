@@ -495,6 +495,9 @@ textarea {
     width: 0;
 }
 
+.service__checkbox-container input:checked~.service__checkmark {
+    border: 2px solid #00AEDC;
+}
 
 .service__checkmark {
     position: absolute;
@@ -502,7 +505,7 @@ textarea {
     left: 0;
     height: 17px;
     width: 17px;
-    border: 2px solid #00AEDC;
+    border: 2px solid gray;
     border-radius: 50%;
 }
 

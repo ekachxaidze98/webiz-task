@@ -541,6 +541,7 @@ textarea::placeholder {
     color: #7A7A7A;
     font-size: 14px;
     font-weight: 600;
+    padding-right: 40px;
 }
 
 .service__readmore {

@@ -602,6 +602,9 @@ textarea {
     .user {
         flex-direction: column;
     }
+    .review__rate {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -653,9 +656,6 @@ textarea {
         display: block;
     }
 
-    .review__rate {
-        flex-direction: column;
-    }
 
     .main-sidecontent {
         order: 1;
@@ -684,14 +684,19 @@ textarea {
 
     .review__head {
         display: flex;
+        margin-bottom: 10px;
     }
 
     .service__booking {
         display: none;
     }
+        .review__button--disabled {
+        font-size: 12px;
+        padding: 8px 22px;
+    }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 360px) {
     .user__img {
         width: 80px;
         height: 80px;
@@ -714,4 +719,7 @@ textarea {
         width: 20px;
         height: 20px;
     }
+
+
+
 }
